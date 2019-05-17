@@ -1,0 +1,59 @@
+/*********************************************************  CSS for "Users.js"*/
+.users__wrapper {
+  align-self: center;
+  height: 40%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 0.8em;
+}
+
+.users__header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #274684;
+}
+.users__list {
+  list-style: none;
+  height: 17vh;
+  width: 100%;
+  margin: 0.5rem 0;
+  overflow-x: hidden;
+}
+
+/***************************************************************** Every user */
+.users__user {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  font-size: inherit;
+  cursor: pointer;
+}
+.users__user:hover {
+  color: #011c35;
+  background-color: #eee;
+  font-weight: 600;
+}
+
+/************************************************************************ btn */
+.users__btn {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: inherit;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+.users__btn:hover {
+  color: #011c35;
+  background-color: #eee;
+}
+
+/********************************************************************** MEDIA */
+@media (max-width: 780px) {
+  .users__wrapper {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 400px) {
+  .users__wrapper {
+    font-size: 0.6em;
+  }
+}
