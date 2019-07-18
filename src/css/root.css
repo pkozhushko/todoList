@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300|Montserrat+Alternates:900i|Nunito:200&subset=cyrillic');
+
+/****************** Media-queries are at the footer of every .css *************/
+
+.Main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #011c35;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+}

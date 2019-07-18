@@ -1,0 +1,69 @@
+/******************************************************  CSS for "UserPage.js"*/
+
+.user {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 4.5rem 1fr;
+  grid-template-areas: "header header"
+                       "info tasks";
+}
+
+/****************************************************************  User side  */
+.user__info {
+  width: 100%;
+  padding: 0 5%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: info;
+}
+
+/***************************************************************** User image */
+.user-img__wrapper {
+  padding: 0.5rem;
+  border-radius: 100%;
+  border: 1px solid #eee;
+}
+.user-img__crop {
+  position: relative;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+}
+.user-img {
+  position: absolute;
+  width: 100%;
+}
+
+/********************************************************************** MEDIA */
+@media (max-width: 1000px) {
+  .user-img__crop {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media (max-width: 780px) {
+    .user {
+      grid-template-columns: 1fr;
+      grid-template-rows: 4.5rem 1fr 3fr;
+      grid-template-areas:
+        "header header"
+        "info info"
+        "tasks tasks";
+    }
+    .user-img__wrapper {
+      margin-top: 1rem;
+    }
+}
+@media (max-width: 400px) {
+  .user-img__crop {
+    width: 8rem;
+    height: 8rem;
+  }
+  .user {
+    font-size: 0.8em;
+  }
+}
