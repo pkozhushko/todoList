@@ -1,0 +1,78 @@
+/*********************************************  CSS for -component- "Title.js"*/
+
+.title__wrapper {
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+   "logo text"
+   "logo text";
+}
+
+/***************************************************************** Title logo */
+.title__logo {
+  grid-area: logo;
+  width: 35%;
+  margin-left: 40%;
+  padding-top: 10%;
+}
+
+/***************************************************************** Title text */
+.title-text__wrapper {
+  padding-right: 30%;
+  padding-top: 10%;
+  grid-area: text;
+}
+.title-text__wrapper>hr{
+  border: none;
+  border-top: 1px solid #274684;
+}
+.title-text__header {
+  padding: 3% 5%;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+.title-text__slogan {
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin: 0.1rem;
+  padding: 3% 5%;
+}
+
+/********************************************************************** MEDIA */
+@media (max-width: 780px) {
+  .title__wrapper {
+    height: auto;
+    grid-template-areas:
+      "logo logo"
+      "text text";
+   }
+   .title__logo {
+     width: 30%;
+     margin: auto;
+   }
+   .title-text__wrapper {
+     padding: 0;
+     grid-area: text;
+     border-bottom: 1px solid #274684;
+   }
+   .title-text__header {
+     font-size: 1.7em;
+   }
+   .title-text__slogan  {
+     font-size: 0.8em;
+   }
+}
+@media (max-width: 400px) {
+  .title-text__header {
+    font-size: 1.2em;
+  }
+  .title-text__slogan  {
+    font-size: 0.6em;
+  }
+}
